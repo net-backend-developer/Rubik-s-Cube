@@ -11,6 +11,7 @@
             _cube = cube;
             // ToDo: Ensure that the cube from a parameter is a valid array
             // When_ invalid _Then throw CubeException("Invalid cube")
+            throw new CubeException(CubeMessages.WrongSideNumber);
         }
 
         public void Move(Movement movement) {
